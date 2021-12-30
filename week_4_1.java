@@ -31,10 +31,10 @@ class salary extends employee
       public void calculate(float bp,float hra,float da,float pf)
       {
           float np=bp+hra+da-pf;
-          this.display(np,name,id,desig);
+          this.display(np);
       }
       
-      public void display(float np,String name,int id,String desig)
+      public void display(float np)
       {
           /*this.name=name;
           this.desig=desig;*/
