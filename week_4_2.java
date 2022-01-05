@@ -51,8 +51,17 @@ class disp extends marks
 class week_4_2
 {
       public static void main(String args[]){
-//          marks m=new marks();
-          disp d=new disp();
-          d.display();
+        //marks m=new marks();
+        System.out.println("enter the no of students:");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        disp d[]=new disp[n];
+        /*disp[] d;
+        d=new disp[n];*/
+        //d=new d[n];
+        for (int i=0;i<n;i++){
+           d[i]=new disp();
+           d[i].display();
         }
+    }
 }
