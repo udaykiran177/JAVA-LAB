@@ -4,7 +4,7 @@ class employee{
      String name;
      int id;
      int salary;
-     employee(){
+     public void read_emp(){
           Scanner sc=new Scanner(System.in);
           System.out.println("enter the name of employee:");
           name=sc.nextLine();
@@ -18,6 +18,7 @@ class employee{
 class temp_employee extends employee{
         temp_employee()
         {
+              this.read_emp();
               System.out.println("NAME:"+name);
               System.out.print("EMPLOYEE TYPE: TEMPORARY");
               System.out.println("ID:"+id+"\nsalary:"+(salary+(salary*0.035)));
@@ -28,6 +29,7 @@ class temp_employee extends employee{
 class per_employee extends employee{
       per_employee()
       {
+            this.read_emp();
             System.out.println("NAME:"+name);
             System.out.println("EMPLOYEE TYPE: PERMENENT");
             System.out.println("ID:"+id+"\nsalary:"+(salary+(salary*0.05)));
